@@ -17,8 +17,8 @@ public class Demo {
 	public void driverInit() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver");
 		//ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		chromeOptions.addArgument('--no-sandbox')
+		//options.addArguments("--headless");
+		chromeOptions.add_argument('--no-sandbox')
 		driver=new ChromeDriver();
 		driver.get(appUrl);
 	}
