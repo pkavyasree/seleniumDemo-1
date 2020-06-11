@@ -17,7 +17,11 @@ public class Demo {
 	public void driverInit() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver");
 		ChromeOptions options = new ChromeOptions();
+		chromeOptions = webdriver.ChromeOptions()
 		options.addArguments("--headless");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--remote-debugging-port=9222");
+		driver = webdriver.Chrome('/usr/bin/chromedriver',chrome_options=chromeOptions)
 		driver=new ChromeDriver();
 		driver.get(appUrl);
 	}
