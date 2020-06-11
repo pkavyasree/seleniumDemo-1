@@ -15,7 +15,7 @@ public class Demo {
 
 	
 	public void driverInit() {
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\lib\\chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		driver=new ChromeDriver(options);
