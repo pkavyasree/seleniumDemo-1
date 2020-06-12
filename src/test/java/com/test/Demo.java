@@ -49,7 +49,7 @@ public class Demo {
 	}
 	
 	
-	@Test
+	//@Test
 	public void loginSuccessCase() {
 		loginToApp("admin", "admin");
 	}
