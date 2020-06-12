@@ -17,7 +17,7 @@ public class Demo {
 	public void driverInit() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("prefs", chromePrefs);
+		//options.setExperimentalOption("prefs", chromePrefs);
                 options.addArguments("--no-sandbox");
                 options.addArguments("--headless");
                 options.addArguments("--disable-dev-shm-usage");
