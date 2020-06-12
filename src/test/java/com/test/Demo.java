@@ -16,9 +16,13 @@ public class Demo {
 	
 	public void driverInit() {
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver");
-		//ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--headless");
-		driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("prefs", chromePrefs);
+                options.addArguments("--no-sandbox");
+                options.addArguments("--headless");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--window-size=1920x1080");
+		driver=new ChromeDriver(options);
 		driver.get(appUrl);
 	}
 	
