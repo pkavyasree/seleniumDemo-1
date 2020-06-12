@@ -54,7 +54,7 @@ public class Demo {
 		loginToApp("admin", "admin");
 	}
 	
-	@Test
+	//@Test
 	public void loginFailCase() {
 		loginToApp("admin", " ");
 	}
