@@ -52,13 +52,13 @@ public class Demo {
 	@Test
 	public void loginSuccessCase() {
 		loginToApp("admin", "admin");
-	System.out.println("Testcase passed");
+	//System.out.println("Testcase passed");
 	}
 	
-	@Test
+	//@Test
 	public void loginFailCase() {
 		loginToApp("admin", " ");
-	System.out.println("Testcase Failed");
+	//System.out.println("Testcase Failed");
 	}
 	
 	@After
